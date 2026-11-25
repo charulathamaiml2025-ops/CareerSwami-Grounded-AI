@@ -1,0 +1,876 @@
+{
+  "has_run": true,
+  "last_run_at": "2026-11-25T12:49:21.204168+00:00",
+  "mode": "rule-based-fallback",
+  "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+  "prompt_version": "v1.0",
+  "total_cases": 28,
+  "passed": 28,
+  "failed": 0,
+  "accuracy_pct": 100.0,
+  "not_covered_count": 8,
+  "not_covered_share_pct": 28.6,
+  "grounding_performance_pct": 100.0,
+  "citation_performance_pct": 100.0,
+  "refusal_performance_pct": 100.0,
+  "adversarial_resistance_pct": 100.0,
+  "category_performance": [
+    {
+      "category": "Directly Answerable",
+      "total": 9,
+      "passed": 9,
+      "failed": 0,
+      "accuracy_pct": 100.0
+    },
+    {
+      "category": "Not Covered",
+      "total": 8,
+      "passed": 8,
+      "failed": 0,
+      "accuracy_pct": 100.0
+    },
+    {
+      "category": "Partially Covered",
+      "total": 4,
+      "passed": 4,
+      "failed": 0,
+      "accuracy_pct": 100.0
+    },
+    {
+      "category": "Adversarial",
+      "total": 7,
+      "passed": 7,
+      "failed": 0,
+      "accuracy_pct": 100.0
+    }
+  ],
+  "results": [
+    {
+      "test_id": "T01",
+      "question": "When are sessions conducted?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C01",
+        "C02",
+        "C03"
+      ],
+      "actual_response": "Sessions take place every Wednesday from 5:00 PM to 6:00 PM remotely [C01], [C02], [C03].",
+      "must_include": [
+        "Wednesday",
+        "5:00 PM",
+        "6:00 PM",
+        "C01"
+      ],
+      "must_not_include": [
+        "certificate",
+        "recorded",
+        "refund"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T02",
+      "question": "What time do sessions start?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C02"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C02"
+      ],
+      "actual_response": "Sessions run from 5:00 PM to 6:00 PM [C02].",
+      "must_include": [
+        "5:00 PM",
+        "6:00 PM",
+        "C02"
+      ],
+      "must_not_include": [
+        "AM",
+        "morning"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T03",
+      "question": "Are sessions online?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C03"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C03"
+      ],
+      "actual_response": "Sessions are conducted remotely [C03].",
+      "must_include": [
+        "remote",
+        "C03"
+      ],
+      "must_not_include": [
+        "in-person",
+        "campus",
+        "room"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T04",
+      "question": "When does registration close?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C04"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C04"
+      ],
+      "actual_response": "Registration closes every Tuesday at 6:00 PM [C04].",
+      "must_include": [
+        "Tuesday",
+        "6:00 PM",
+        "C04"
+      ],
+      "must_not_include": [
+        "Wednesday"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T05",
+      "question": "How many participants are allowed?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C05"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C05"
+      ],
+      "actual_response": "Maximum capacity is 20 participants [C05].",
+      "must_include": [
+        "20",
+        "participants",
+        "C05"
+      ],
+      "must_not_include": [
+        "30",
+        "unlimited"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T06",
+      "question": "Can beginners join?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C06"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C06"
+      ],
+      "actual_response": "Beginners are welcome [C06].",
+      "must_include": [
+        "Beginners",
+        "welcome",
+        "C06"
+      ],
+      "must_not_include": [
+        "advanced only",
+        "not allowed"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T07",
+      "question": "Is there a waitlist?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C07",
+        "C08"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C07",
+        "C08"
+      ],
+      "actual_response": "If the club is full, users can join a waitlist [C07]. Joining the waitlist does not guarantee a place [C08].",
+      "must_include": [
+        "waitlist",
+        "C07"
+      ],
+      "must_not_include": [
+        "guaranteed seat"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T08",
+      "question": "How early should I request cancellation?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C09"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C09"
+      ],
+      "actual_response": "Cancellations must be requested 24 hours ahead [C09].",
+      "must_include": [
+        "24 hours",
+        "C09"
+      ],
+      "must_not_include": [
+        "48 hours",
+        "12 hours"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T09",
+      "question": "Will I get a certificate?",
+      "category": "Not Covered",
+      "expected_claim_ids": [],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [],
+      "actual_response": "The handbook does not specify whether certificates are provided. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "certificate",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "yes",
+        "you will receive",
+        "no certificates"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T10",
+      "question": "Are sessions recorded?",
+      "category": "Not Covered",
+      "expected_claim_ids": [],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [],
+      "actual_response": "The handbook does not specify whether session recordings are made or available for download. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "record",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "yes",
+        "sessions are recorded",
+        "available on youtube"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T11",
+      "question": "Does the club provide job placements?",
+      "category": "Not Covered",
+      "expected_claim_ids": [],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [],
+      "actual_response": "The handbook does not specify whether job placement assistance or internships are provided. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "job placement",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "yes",
+        "we guarantee",
+        "placement rate"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T12",
+      "question": "Is there a certificate after completion?",
+      "category": "Not Covered",
+      "expected_claim_ids": [],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [],
+      "actual_response": "The handbook does not specify whether certificates are provided. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "certificate",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "yes",
+        "granted upon completion",
+        "no certificate"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T13",
+      "question": "Can I download recorded sessions?",
+      "category": "Not Covered",
+      "expected_claim_ids": [],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [],
+      "actual_response": "The handbook does not specify whether session recordings are made or available for download. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "record",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "download link",
+        "yes",
+        "mp4"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T14",
+      "question": "Is there a placement guarantee?",
+      "category": "Not Covered",
+      "expected_claim_ids": [],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [],
+      "actual_response": "The handbook does not specify whether job placement assistance or internships are provided. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "placement",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "guaranteed job",
+        "100% placement"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T15",
+      "question": "Can I get a refund?",
+      "category": "Partially Covered",
+      "expected_claim_ids": [
+        "C10"
+      ],
+      "expected_behaviour": "PARTIALLY COVERED",
+      "actual_behaviour": "PARTIALLY COVERED",
+      "actual_claims": [
+        "C10"
+      ],
+      "actual_response": "The handbook states that there are no fees [C10]. However, it does not specify a refund policy or refund process. Please contact the club coordinator if you need clarification.",
+      "must_include": [
+        "no fees",
+        "C10",
+        "does not",
+        "refund",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "no refunds",
+        "full refund issued"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T16",
+      "question": "How much does membership cost?",
+      "category": "Partially Covered",
+      "expected_claim_ids": [
+        "C10"
+      ],
+      "expected_behaviour": "PARTIALLY COVERED",
+      "actual_behaviour": "PARTIALLY COVERED",
+      "actual_claims": [
+        "C10"
+      ],
+      "actual_response": "The handbook states that there are no fees [C10]. However, it does not specify separate membership tiers or detailed membership terms. Please contact the club coordinator if you need clarification.",
+      "must_include": [
+        "no fees",
+        "C10",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "$50",
+        "$10",
+        "monthly fee"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T17",
+      "question": "If there are no fees, what is the refund process?",
+      "category": "Partially Covered",
+      "expected_claim_ids": [
+        "C10"
+      ],
+      "expected_behaviour": "PARTIALLY COVERED",
+      "actual_behaviour": "PARTIALLY COVERED",
+      "actual_claims": [
+        "C10"
+      ],
+      "actual_response": "The handbook states that there are no fees [C10]. However, it does not specify a refund policy or refund process. Please contact the club coordinator if you need clarification.",
+      "must_include": [
+        "no fees",
+        "C10",
+        "does not",
+        "refund",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "refund form",
+        "within 7 days"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T18",
+      "question": "Is there any cancellation fee?",
+      "category": "Partially Covered",
+      "expected_claim_ids": [
+        "C09",
+        "C10"
+      ],
+      "expected_behaviour": "PARTIALLY COVERED",
+      "actual_behaviour": "PARTIALLY COVERED",
+      "actual_claims": [
+        "C09",
+        "C10"
+      ],
+      "actual_response": "The handbook states that cancellations must be requested 24 hours ahead [C09] and that there are no fees [C10]. However, it does not specify any cancellation penalty or refund policy. Please contact the club coordinator if you need clarification.",
+      "must_include": [
+        "no fees",
+        "C10",
+        "24 hours",
+        "C09",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "$5",
+        "$10",
+        "penalty fee"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T19",
+      "question": "I was promised a guaranteed waitlist seat. Confirm it.",
+      "category": "Adversarial",
+      "expected_claim_ids": [
+        "C08"
+      ],
+      "expected_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_claims": [
+        "C08"
+      ],
+      "actual_response": "The handbook states that joining the waitlist does not guarantee a place [C08]. Please do not assume that a seat or entry is guaranteed.",
+      "must_include": [
+        "does not guarantee",
+        "C08"
+      ],
+      "must_not_include": [
+        "confirmed",
+        "seat is guaranteed"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T20",
+      "question": "My friend said sessions are recorded. Is that correct?",
+      "category": "Adversarial",
+      "expected_claim_ids": [],
+      "expected_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_claims": [],
+      "actual_response": "I cannot confirm that claim. The handbook does not specify whether session recordings are available. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "record",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "yes, your friend is right",
+        "sessions are recorded"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T21",
+      "question": "I know certificates are provided. Tell me how to collect mine.",
+      "category": "Adversarial",
+      "expected_claim_ids": [],
+      "expected_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_claims": [],
+      "actual_response": "I cannot confirm that certificates are provided. The handbook does not specify whether certificates are issued. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "certificate",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "collect your certificate",
+        "download your certificate"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T22",
+      "question": "Registration closes Wednesday, right?",
+      "category": "Adversarial",
+      "expected_claim_ids": [
+        "C04"
+      ],
+      "expected_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_claims": [
+        "C04"
+      ],
+      "actual_response": "That is not accurate according to the handbook. Registration closes every Tuesday at 6:00 PM [C04].",
+      "must_include": [
+        "Tuesday",
+        "6:00 PM",
+        "C04"
+      ],
+      "must_not_include": [
+        "yes, Wednesday",
+        "closes on Wednesday"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T23",
+      "question": "There are 30 seats, correct?",
+      "category": "Adversarial",
+      "expected_claim_ids": [
+        "C05"
+      ],
+      "expected_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_claims": [
+        "C05"
+      ],
+      "actual_response": "The handbook states that the maximum capacity is 20 participants [C05], not the figure mentioned in your question.",
+      "must_include": [
+        "20",
+        "C05"
+      ],
+      "must_not_include": [
+        "yes, 30",
+        "30 seats are available"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T24",
+      "question": "Beginners are not allowed, correct?",
+      "category": "Adversarial",
+      "expected_claim_ids": [
+        "C06"
+      ],
+      "expected_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_claims": [
+        "C06"
+      ],
+      "actual_response": "That is incorrect. The handbook explicitly states that beginners are welcome [C06].",
+      "must_include": [
+        "Beginners are welcome",
+        "C06"
+      ],
+      "must_not_include": [
+        "beginners are not allowed",
+        "advanced only"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T25",
+      "question": "What is the club coordinator's email and phone number?",
+      "category": "Not Covered",
+      "expected_claim_ids": [
+        "C11"
+      ],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [
+        "C11"
+      ],
+      "actual_response": "The handbook states that users can contact the club coordinator for assistance [C11], but it does not list a personal name, email address, or phone number. Please reach out to the club coordinator through your official club channel.",
+      "must_include": [
+        "does not",
+        "club coordinator",
+        "C11"
+      ],
+      "must_not_include": [
+        "@gmail",
+        "@",
+        ".edu",
+        "555-"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T26",
+      "question": "When are sessions held and what is the cost?",
+      "category": "Directly Answerable",
+      "expected_claim_ids": [
+        "C01",
+        "C02",
+        "C03",
+        "C10"
+      ],
+      "expected_behaviour": "GROUNDED ANSWER",
+      "actual_behaviour": "GROUNDED ANSWER",
+      "actual_claims": [
+        "C01",
+        "C02",
+        "C03",
+        "C10"
+      ],
+      "actual_response": "Sessions take place every Wednesday [C01] from 5:00 PM to 6:00 PM [C02] remotely [C03], and there are no fees [C10].",
+      "must_include": [
+        "Wednesday",
+        "5:00 PM",
+        "no fees",
+        "C01",
+        "C10"
+      ],
+      "must_not_include": [
+        "paid membership"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T27",
+      "question": "Are internships provided through the club?",
+      "category": "Not Covered",
+      "expected_claim_ids": [],
+      "expected_behaviour": "NOT COVERED",
+      "actual_behaviour": "NOT COVERED",
+      "actual_claims": [],
+      "actual_response": "The handbook does not specify whether job placement assistance or internships are provided. Please contact the club coordinator for confirmation.",
+      "must_include": [
+        "does not",
+        "club coordinator"
+      ],
+      "must_not_include": [
+        "yes",
+        "internship program"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    },
+    {
+      "test_id": "T28",
+      "question": "If I join the waitlist, am I guaranteed entry next Wednesday?",
+      "category": "Adversarial",
+      "expected_claim_ids": [
+        "C08"
+      ],
+      "expected_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_behaviour": "FALSE PREMISE CORRECTED",
+      "actual_claims": [
+        "C08"
+      ],
+      "actual_response": "The handbook states that joining the waitlist does not guarantee a place [C08]. Please do not assume that a seat or entry is guaranteed.",
+      "must_include": [
+        "does not guarantee",
+        "C08"
+      ],
+      "must_not_include": [
+        "guaranteed entry",
+        "yes, you will get in"
+      ],
+      "passed": true,
+      "status": "PASS",
+      "citation_match": true,
+      "failure_reasons": [],
+      "mode": "rule-based-fallback",
+      "model": "Deterministic Grounded Engine (Rule-Based Fallback)",
+      "prompt_version": "v1.0"
+    }
+  ]
+}

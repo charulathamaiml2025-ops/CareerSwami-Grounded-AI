@@ -1,0 +1,105 @@
+{
+  "handbook_title": "CareerSwami Student Club - Official Handbook",
+  "handbook_version": "1.0",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "claim_text": "Sessions happen every Wednesday.",
+      "source_section": "Section 1: Schedule and Format",
+      "source_location": "Handbook Line 6 (Fact #1)",
+      "keywords": ["wednesday", "day", "schedule", "weekly", "when", "sessions", "conduct", "conducted", "held", "meet"]
+    },
+    {
+      "claim_id": "C02",
+      "claim_text": "Sessions run from 5:00 PM to 6:00 PM.",
+      "source_section": "Section 1: Schedule and Format",
+      "source_location": "Handbook Line 7 (Fact #2)",
+      "keywords": ["time", "start", "end", "5:00 pm", "6:00 pm", "5 pm", "6 pm", "duration", "hour", "hours", "when", "schedule"]
+    },
+    {
+      "claim_id": "C03",
+      "claim_text": "Sessions are remote.",
+      "source_section": "Section 1: Schedule and Format",
+      "source_location": "Handbook Line 8 (Fact #3)",
+      "keywords": ["remote", "remotely", "online", "virtual", "location", "where", "format", "in-person", "zoom", "meet"]
+    },
+    {
+      "claim_id": "C04",
+      "claim_text": "Registration closes Tuesday at 6:00 PM.",
+      "source_section": "Section 2: Registration and Capacity",
+      "source_location": "Handbook Line 11 (Fact #4)",
+      "keywords": ["registration", "register", "signup", "sign up", "deadline", "close", "closes", "tuesday", "6:00 pm", "cutoff"]
+    },
+    {
+      "claim_id": "C05",
+      "claim_text": "Capacity is 20 participants.",
+      "source_section": "Section 2: Registration and Capacity",
+      "source_location": "Handbook Line 12 (Fact #5)",
+      "keywords": ["capacity", "20", "participants", "limit", "max", "maximum", "seats", "spots", "people", "how many", "size"]
+    },
+    {
+      "claim_id": "C06",
+      "claim_text": "Beginners are welcome.",
+      "source_section": "Section 2: Registration and Capacity",
+      "source_location": "Handbook Line 13 (Fact #6)",
+      "keywords": ["beginner", "beginners", "experience", "skill", "level", "newcomer", "welcome", "join", "prerequisite", "prerequisites"]
+    },
+    {
+      "claim_id": "C07",
+      "claim_text": "A waitlist is available when capacity is full.",
+      "source_section": "Section 3: Waitlist and Cancellations",
+      "source_location": "Handbook Line 16 (Fact #7)",
+      "keywords": ["waitlist", "wait list", "full", "sold out", "queue", "overflow", "capacity"]
+    },
+    {
+      "claim_id": "C08",
+      "claim_text": "Waitlist membership does not guarantee a place.",
+      "source_section": "Section 3: Waitlist and Cancellations",
+      "source_location": "Handbook Line 17 (Fact #8)",
+      "keywords": ["waitlist", "guarantee", "guaranteed", "promised", "place", "seat", "spot", "confirmed"]
+    },
+    {
+      "claim_id": "C09",
+      "claim_text": "Cancellations must be requested 24 hours ahead.",
+      "source_section": "Section 3: Waitlist and Cancellations",
+      "source_location": "Handbook Line 18 (Fact #9)",
+      "keywords": ["cancel", "cancellation", "cancellations", "withdraw", "drop", "24 hours", "advance", "ahead", "notice", "early"]
+    },
+    {
+      "claim_id": "C10",
+      "claim_text": "There are no fees.",
+      "source_section": "Section 4: Fees and Assistance",
+      "source_location": "Handbook Line 21 (Fact #10)",
+      "keywords": ["fee", "fees", "cost", "price", "free", "charge", "payment", "pay", "money", "refund", "membership", "tuition", "dues"]
+    },
+    {
+      "claim_id": "C11",
+      "claim_text": "Contact the club coordinator for assistance.",
+      "source_section": "Section 4: Fees and Assistance",
+      "source_location": "Handbook Line 22 (Fact #11)",
+      "keywords": ["contact", "coordinator", "club coordinator", "help", "assistance", "support", "question", "clarification", "reach"]
+    }
+  ],
+  "uncovered_topics": [
+    {
+      "topic": "Certificates",
+      "description": "Whether certificates of participation or completion are provided.",
+      "keywords": ["certificate", "certificates", "certification", "credential", "badge", "diploma", "completion"]
+    },
+    {
+      "topic": "Session Recordings",
+      "description": "Whether club sessions are recorded or available for replay/download.",
+      "keywords": ["record", "recorded", "recording", "recordings", "replay", "video", "download", "watch later"]
+    },
+    {
+      "topic": "Refund Policy",
+      "description": "Whether refunds or a formal refund process are available.",
+      "keywords": ["refund", "refunds", "reimbursement", "money back", "refund process"]
+    },
+    {
+      "topic": "Job Placement Assistance",
+      "description": "Whether job placement, referrals, or employment guarantees are provided.",
+      "keywords": ["job", "jobs", "placement", "placements", "career", "hiring", "employment", "internship", "internships", "recruit", "guarantee"]
+    }
+  ]
+}
